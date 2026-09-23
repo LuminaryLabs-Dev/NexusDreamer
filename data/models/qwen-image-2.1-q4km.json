@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "qwen-image-2.1-q4km",
+  "name": "Qwen Image 2.1 Q4_K",
+  "provider": "stable-diffusion-cpp",
+  "capabilities": {"generation":true,"editing":true,"references":true},
+  "files": [
+    {"key":"diffusion","repo":"leejet/Qwen-Image-2.1-GGUF","filename":"qwen_image_2.1-Q4_K.gguf","required":true},
+    {"key":"vae","repo":"Comfy-Org/Qwen-Image-2.1","filename":"qwen_image_2.1_vae_bf16.safetensors","remotePath":"vae/qwen_image_2.1_vae_bf16.safetensors","required":true},
+    {"key":"textEncoder","repo":"Qwen/Qwen3-VL-8B-Instruct-GGUF","filename":"Qwen3VL-8B-Instruct-Q4_K_M.gguf","required":true},
+    {"key":"vision","repo":"Qwen/Qwen3-VL-8B-Instruct-GGUF","filename":"mmproj-Qwen3VL-8B-Instruct-F16.gguf","required":true}
+  ]
+}
